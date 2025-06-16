@@ -101,6 +101,29 @@
         padding: 20px;
         text-align: center;
       }
+
+      .btn-download-apk {
+        background-color: #1b8af2;
+        border: white 1px solid;
+        color: black;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        box-shadow: 0 2px 8px 0 rgba(27, 138, 242, 0.08);
+      }
+      .btn-download-apk:hover, .btn-download-apk:focus {
+        background: #155fa0;
+        color: #fff;
+        border: #1b8af2 1px solid;
+        box-shadow: 0 4px 16px 0 rgba(27, 138, 242, 0.18);
+      }
+
+      .btn-download-apk svg {
+        transition: fill 0.2s;
+      }
+      
+      .btn-download-apk:hover svg,
+      .btn-download-apk:focus svg {
+        fill: #fff;
+      }
     </style>
   </head>
 
@@ -133,6 +156,7 @@
         alt="Logo UniTrain"
         style="max-width: 100px"
         class="mb-4"
+        loading="lazy"
       />
       <h2 class="display-5 fw-bold">Gerencie seus treinos com liberdade</h2>
       <p class="lead">Sem login. Sem rastreamento. 100% offline.</p>
@@ -142,6 +166,16 @@
           src="https://img.shields.io/github/stars/caarloshenriq/unitrain?style=for-the-badge&logo=github&label=UniTrain&labelColor=black&color=abdbe3"
         />
       </a>
+
+      <div class="mt-4">
+        <a href="/unitrain.apk" download class="btn btn-primary btn-lg btn-download-apk">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="black" class="bi bi-download me-2" viewBox="0 0 16 16" style="vertical-align: sub;">
+            <path d="M.5 9.9a.5.5 0 0 1 .5.5V13a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.6a.5.5 0 0 1 1 0V13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.6a.5.5 0 0 1 .5-.5z"/>
+            <path d="M7.646 10.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 9.293V1.5a.5.5 0 0 0-1 0v7.793L5.354 7.146a.5.5 0 1 0-.708.708l3 3z"/>
+          </svg>
+          Baixar Unitrain
+        </a>
+      </div>     
     </section>
 
     <section class="feature-section container">
@@ -201,6 +235,7 @@
                 src="screenshot.png"
                 class="d-block mx-auto"
                 alt="Tela 1 do UniTrain"
+                loading="lazy"
               />
             </div>
             <div class="carousel-item">
@@ -208,6 +243,7 @@
                 src="screenshot2.jpeg"
                 class="d-block mx-auto"
                 alt="Tela 2 do UniTrain"
+                loading="lazy"
               />
             </div>
             <div class="carousel-item">
@@ -215,6 +251,7 @@
                 src="screenshot3.jpeg"
                 class="d-block mx-auto"
                 alt="Tela 3 do UniTrain"
+                loading="lazy"
               />
             </div>
             <div class="carousel-item">
@@ -222,6 +259,7 @@
                 src="screenshot4.jpeg"
                 class="d-block mx-auto"
                 alt="Tela 4 do UniTrain"
+                loading="lazy"
               />
             </div>
           </div>
